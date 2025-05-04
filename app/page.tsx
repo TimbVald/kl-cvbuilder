@@ -30,7 +30,7 @@ import HobbyForm from "./components/HobbyForm";
 import html2canvas from "html2canvas-pro";
 import jsPDF from "jspdf";
 
-// import confetti from "canvas-confetti"
+import confetti from "canvas-confetti"
 
 export default function Home() {
   const [personalDetails, setPersonalDetails] = useState<PersonalDetails>(
@@ -142,12 +142,12 @@ export default function Home() {
           modal.close();
         }
 
-        // confetti({
-        //      particleCount: 100,
-        //      spread: 70 ,
-        //      origin: {y:0.6},
-        //      zIndex:9999
-        // })
+        confetti({
+             particleCount: 100,
+             spread: 70 ,
+             origin: {y:0.6},
+             zIndex:9999
+        })
       } catch (error) {
         console.error("Erreur lors de la génération du PDF :", error);
       }
