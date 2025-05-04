@@ -37,7 +37,7 @@ export default function Home() {
     personalDetailsPreset
   );
   const [file, setFile] = useState<File | null>(null);
-  const [theme, setTheme] = useState<string>("sunset");
+  const [theme, setTheme] = useState<string>("business");
   const [zoom, setZoom] = useState<number>(163);
   const [experiences, setExperience] =
     useState<Experience[]>(experiencesPreset);
