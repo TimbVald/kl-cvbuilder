@@ -47,11 +47,11 @@ export default function Home() {
   const [hobbies, setHobbies] = useState<Hobby[]>(hobbiesPreset);
 
   useEffect(() => {
-    const defaultImageUrl = "/profile.png";
+    const defaultImageUrl = "/profile.jpg";
     fetch(defaultImageUrl)
       .then((res) => res.blob())
       .then((blob) => {
-        const defaultFile = new File([blob], "profile.png", {
+        const defaultFile = new File([blob], "profile.jpg", {
           type: blob.type,
         });
 
